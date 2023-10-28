@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Automation Widget</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #212c38, #334557);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .widget {
+            background: #2c3e50;
+            width: 220px;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 3px 3px 10px #242d37, -3px -3px 10px #3e4f65;
+            color: #e2ebee;
+        }
+
+        .room-name {
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-shadow: 1px 1px 3px #1a242f;
+        }
+
+        .data-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #34495e;
+            border-radius: 12px;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            box-shadow: 2px 2px 8px #1a242f, -2px -2px 8px #3e4f65;
+            transition: transform 0.3s ease;
+        }
+
+        .data-item:hover {
+            transform: scale(1.05);
+            box-shadow: 3px 3px 12px #1a242f, -3px -3px 12px #3e4f65;
+        }
+
+        .bar {
+            height: 15px;
+            width: 60%;
+            background: linear-gradient(to right, #27ae60, #f39c12, #e74c3c);
+            border-radius: 8px;
+        }
+
+        .bar-label {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="widget">
+        <div class="room-name">Kitchen</div>
+        <div class="data-item">
+            <span>Temperature</span>
+            <span>69°C</span>
+        </div>
+        <div class="data-item">
+            <span>Humidity</span>
+            <span>53% RH</span>
+        </div>
+        <div class="data-item">
+            <span>Air Quality</span>
+            <div class="bar"></div>
+        </div>
+        <div class="data-item">
+            <span>Pressure</span>
+            <span>1016 hPa</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
