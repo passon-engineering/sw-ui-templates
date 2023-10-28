@@ -5,6 +5,7 @@ A collection of unique and modern UI example templates for web developers and de
 ## Table of Contents
 
 - [Dark Morphism](#dark-morphism)
+- [Responsive Grid](#responsive-grid)
 - [Contribute](#contribute)
 
 ---
@@ -15,6 +16,14 @@ A home automation, IoT widget with a dark morphism design.
 
 - [Live Preview](https://passon-engineering.github.io/sw-ui-templates/dark_morphism/)
 - [Code Sample](./dark_morphism/index.html)
+
+
+## Responsive Grid
+
+A responsive grid for dashboards
+
+- [Live Preview](https://passon-engineering.github.io/sw-ui-templates/responsive_grid/)
+- [Code Sample](./responsive_grid/index.html)
 
 ---
 
