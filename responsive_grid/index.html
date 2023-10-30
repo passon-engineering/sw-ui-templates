@@ -5,36 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adapted Flexbox Layout</title>
     <style>
+        body {
+            background-color: #1a1a1a; /* Primary Background Color: Deep Charcoal */
+            color: #f5f5f5; /* Text Color: Off-White */
+            font-family: 'Roboto', sans-serif; /* Modern Font */
+        }
+
         .pe-main-page {
             margin-top: 43px;
             transition: margin-left .4s;
+            background-color: #2e2e2e; /* Secondary Background Color: Slate Grey */
+            padding: 20px; /* Added some padding for visual space */
+        }
+
+        .pe-widget-gap {
+            gap: 10px;
+        }
+
+        .pe-widget-border {
+            border-radius: 15px;
         }
 
         .pe-widget-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
             margin: 0 auto;
         }
 
-        .pe-widget-large {
-            border-radius: 5px;
+        .pe-widget-small, .pe-widget-medium, .pe-widget-large {
+            transition: background-color .3s; /* Adding a transition for hover effect */
+        }
+
+        .pe-widget-small {
+            background: #4f4f4f; /* Kept the same background */
+            width: 165px;
+            height: 165px;
+        }
+
+        .pe-widget-medium {
             background: #4f4f4f;
-            width: 360px;
-            height: 360px;
+            width: 340px;
+            height: 165px;
+        }
+
+        .pe-widget-large {
+            background: #4f4f4f;
+            width: 340px;
+            height: 340px;
+        }
+
+        .pe-widget-small:hover, .pe-widget-medium:hover, .pe-widget-large:hover {
+            background: #214A7F; /* Accent Color 2: Sapphire Blue (for hover effect) */
         }
     </style>
 </head>
 <body>
     <div class="pe-main-page">
-        <div class="pe-widget-container">
-            <div class="pe-widget-large"></div>
-            <div class="pe-widget-large"></div>
-            <div class="pe-widget-large"></div>
-            <div class="pe-widget-large"></div>
-            <div class="pe-widget-large"></div>
-            <div class="pe-widget-large"></div>
-            <div class="pe-widget-large"></div>
+        <div class="pe-widget-container pe-widget-gap">
+            <div class="pe-widget-small pe-widget-border"></div>
+            <div class="pe-widget-small pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-medium pe-widget-border"></div>
+            <div class="pe-widget-large pe-widget-border"></div>
+            <div class="pe-widget-large pe-widget-border"></div>
+            <div class="pe-widget-large pe-widget-border"></div>
+            <div class="pe-widget-large pe-widget-border"></div>
+            <div class="pe-widget-large pe-widget-border"></div>
+            <div class="pe-widget-large pe-widget-border"></div>
         </div>
     </div>
 
@@ -52,8 +94,8 @@
             const mainPageWidth = mainPage.offsetWidth;
             console.log(mainPageWidth);
 
-            const widgetSize = 360;
-            const gapSize = 5;
+            const widgetSize = 340;
+            const gapSize = 10;
             const countOfWidgetsFitting = timesFits(mainPageWidth, widgetSize+gapSize);
 
             console.log(countOfWidgetsFitting);
