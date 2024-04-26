@@ -14,7 +14,7 @@ A collection of unique and modern UI example templates for web developers and de
 
 A home automation, IoT widget with a dark morphism design.
 
-- [Live Preview](https://passon-engineering.github.io/sw-ui-templates/ui_dark_morphism/)
+- [Live Preview](https://tpasson.github.io/sw-ui-templates/ui_dark_morphism/)
 - [Code Sample](./ui_dark_morphism/index.html)
 
 
@@ -22,7 +22,7 @@ A home automation, IoT widget with a dark morphism design.
 
 A responsive grid for dashboards
 
-- [Live Preview](https://passon-engineering.github.io/sw-ui-templates/ui_responsive_grid/)
+- [Live Preview](https://tpasson.github.io/sw-ui-templates/ui_responsive_grid/)
 - [Code Sample](./ui_responsive_grid/index.html)
 
 ---
